@@ -1,10 +1,21 @@
-# ROS2-Gazebo-Devcontainer
+# Mini Autonomous Car (ROS2 + Docker)
+
+## Overview
+
+This project focuses on developing an autonomous navigation system using a 1:10 scale model car, powered by ROS2 and Gazebo simulation. Developed as part of a university project.
+It includes features such as sensor fusion, path planning, and real-world deployment.
 
 ## Setup
 
-Install [Docker Engine](https://docs.docker.com/engine/install/)
+#### 1. Prerequisites
 
-Install [Visual Studio Code](https://code.visualstudio.com/)
+To run this project, the following tools are needed:
+
+    •Docker Engine
+    •Visual Studio Code
+    •VS Code Extensions:
+        •Docker
+        •Dev Containers
 
 ## Start the Container with Visual Studio Code
 
