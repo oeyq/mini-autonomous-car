@@ -1,0 +1,18 @@
+slam_toolbox:
+  ros__parameters:
+    # Basic setup
+    use_sim_time: false
+    mode: "mapping"
+    
+    # Frame definitions
+    odom_frame: "robot/odom"
+    base_frame: "robot/base_link"
+    map_frame: "map"
+    scan_topic: "/robot/scan"
+    
+    # Position configuration
+    map_start_pose: [0.0, 0.0, 0.0]
+    
+    # Required parameters for functionality
+    publish_map: true
+    debug_logging: true

@@ -1,0 +1,18 @@
+digraph G {
+"robot/odom" -> "robot/base_link"[label=" Broadcaster: default_authority\nAverage rate: 100.306\nBuffer length: 3.27\nMost recent transform: 1786.122\nOldest transform: 1782.852\n"];
+"robot/chassis" -> "robot/left_steering"[label=" Broadcaster: default_authority\nAverage rate: 40.171\nBuffer length: 2.34\nMost recent transform: 1786.082\nOldest transform: 1783.742\n"];
+"robot/base_link" -> "robot/chassis"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot/chassis" -> "robot/left_wheel_back"[label=" Broadcaster: default_authority\nAverage rate: 40.171\nBuffer length: 2.34\nMost recent transform: 1786.082\nOldest transform: 1783.742\n"];
+"robot/left_steering" -> "robot/left_wheel_front"[label=" Broadcaster: default_authority\nAverage rate: 40.171\nBuffer length: 2.34\nMost recent transform: 1786.082\nOldest transform: 1783.742\n"];
+"robot/chassis" -> "robot/right_steering"[label=" Broadcaster: default_authority\nAverage rate: 40.171\nBuffer length: 2.34\nMost recent transform: 1786.082\nOldest transform: 1783.742\n"];
+"robot/chassis" -> "robot/right_wheel_back"[label=" Broadcaster: default_authority\nAverage rate: 40.171\nBuffer length: 2.34\nMost recent transform: 1786.082\nOldest transform: 1783.742\n"];
+"robot/right_steering" -> "robot/right_wheel_front"[label=" Broadcaster: default_authority\nAverage rate: 40.171\nBuffer length: 2.34\nMost recent transform: 1786.082\nOldest transform: 1783.742\n"];
+"robot/chassis" -> "robot/steering_wheel"[label=" Broadcaster: default_authority\nAverage rate: 40.171\nBuffer length: 2.34\nMost recent transform: 1786.082\nOldest transform: 1783.742\n"];
+"robot/chassis" -> "robot/camera"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot/chassis" -> "robot/imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot/chassis" -> "robot/laser"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1731196264.533382"[ shape=plaintext ] ;
+}->"robot/odom";
+}
